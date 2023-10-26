@@ -19,7 +19,7 @@ public class CasoDeEstudio1 {
         
         String lecture;
         int userBills =0;
-        double totalamount;
+        int conver;
         double interst;
         
         
@@ -37,7 +37,7 @@ public class CasoDeEstudio1 {
             nuevo.setiDOfBill(i);
             nuevo.getiDOfBill();
             nuevo.setMoouth(i);
-            nuevo.getMoouth();
+            nuevo.getMoouth();  
             nuevo.setYearOfBill(i);
             nuevo.getYearOfBill();
             nuevo.setAmountOfBill(i);
@@ -47,6 +47,15 @@ public class CasoDeEstudio1 {
             nuevo1.getConvert();
             
             
+        }
+        
+        lecture = JOptionPane.showInputDialog("Quieres revisar si tienes facturas pendientes?: ");
+        conver = Integer.parseInt(lecture);
+        
+        if (conver == 1){
+            JOptionPane.showConfirmDialog(null,"Usted tiene: " + "Facturas pendientes");
+        }else{
+            JOptionPane.showConfirmDialog(null,"Usted no tiene niguna factura pendiente!");
         }
         
     }

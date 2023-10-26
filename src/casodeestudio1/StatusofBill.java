@@ -12,11 +12,13 @@ import javax.swing.JOptionPane;
 public class StatusofBill {
     
     public int getConvert() {
+        System.out.println("Status: " + " " + convert);
         return convert;
         
     }
 
     public void setConvert(int convert) {
+        
         lecture = JOptionPane.showInputDialog("Si la factura esta paga digite 1, si no digite 2.");
         convert = Integer.parseInt(lecture);
         
